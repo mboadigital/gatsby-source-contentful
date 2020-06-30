@@ -282,8 +282,8 @@ function replaceEntryFields(document) {
   return document;
 }
 
-function prepareRichTextNode(node, key, originalContent, createNodeId) {
-  const content = replaceEntryFields(originalContent);
+function prepareRichTextNode(node, key, content, createNodeId) {
+  // const content = replaceEntryFields(originalContent);
   const str = stringify(content)
   const richTextNode = {
     ...content,
